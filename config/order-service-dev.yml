@@ -2,35 +2,35 @@ spring:
   application:
     name: order-service
     
-#server:
+#server: 
 #  port: 8201
 #  
   
-eureka:
-  client:
-    service-url:
+eureka: 
+  client: 
+    service-url: 
       defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
       
-feign:
-  hystrix:
+feign: 
+  hystrix: 
     enabled: true
 
-management:
-  endpoints:
-    web:
-      exposure:
+management: 
+  endpoints: 
+    web: 
+      exposure: 
         include: hystrix.steam
 
 ---
-spring:
+spring: 
   profiles: order1
   
-server:
+server: 
   port: 8201
   
 ---
-spring:
+spring: 
   profiles: order2
   
-server:
+server: 
   port: 8202

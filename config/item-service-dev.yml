@@ -2,7 +2,7 @@ spring:
   application:
     name: item-service
 #
-#server:#  port: 8001
+#server: #  port: 8001
   
   
 eureka:
@@ -12,12 +12,12 @@ eureka:
       
       
 ---
-spring:  profiles: item1
+spring:   profiles: item1
   
-server:  port: 8001
+server:   port: 8001
 
   
 ---
-spring:  profiles: item2
+spring:   profiles: item2
   
-server:  port: 8002
+server:   port: 8002
