@@ -20,14 +20,12 @@ management:
     web: 
       exposure: 
         include: hystrix.steam
-
 ---
 spring: 
   profiles: order1
   
 server: 
   port: 8201
-  
 ---
 spring: 
   profiles: order2
